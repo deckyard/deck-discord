@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: LGPL-3.0-only
 # SPDX-FileCopyrightText: Copyright (C) 2026 mplx <mplx@jennifer-lang.dev>
-# pragma-jennifer-version: >=0.26.0
+# pragma-jennifer-version: >=0.27.0
 
 /**
  * White-box tests for discord: jennifer test src/discord_test.j
@@ -9,7 +9,7 @@
  * on a loopback port, which answers one request like a Discord webhook does
  * and hands back what it received.
  */
-use convert;
+use encoding;
 use httpd;
 use task;
 use testing;
@@ -35,7 +35,7 @@ func answerOne(srv as httpd.Server) {
         method: httpd.method($req),
         path: httpd.path($req),
         contentType: httpd.header($req, "Content-Type"),
-        body: convert.stringFromBytes("utf-8", httpd.body($req))
+        body: encoding.decode("utf-8", httpd.body($req))
     };
     if ($seen.path == "/webhook") {
         httpd.respond($req, 204, "");
@@ -225,7 +225,7 @@ func testWebhookMustBeHttps() {
         "http://127.0.0.1@evil.example/x",
         ""
     ]) {
-        testing.assertThrowsWith("checkWebhook", [$url], "discord");
+        testing.assertThrowsArgs("checkWebhook", [$url], "discord");
     }
 }
 
@@ -242,5 +242,5 @@ func testWebhookAcceptsHttpsAndLoopback() {
 }
 
 func testSendRefusesPlainHttpBeforeSending() {
-    testing.assertThrowsWith("send", ["http://discord.com/api/webhooks/1/x", "x"], "discord");
+    testing.assertThrowsArgs("send", ["http://discord.com/api/webhooks/1/x", "x"], "discord");
 }

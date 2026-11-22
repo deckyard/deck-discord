@@ -108,8 +108,9 @@ posts nothing, so CI runs it offline.
 
 ## Dependencies on the interpreter
 
-- The floor is `>=0.26.0`, the release that deprecates the bundled module
-  (M30.1) and whose `http` refuses a URL without a valid scheme.
+- The floor is `>=0.27.0`, for the UTF-8 codec of `encoding.decode` and
+  `testing.assertThrowsArgs`. 0.26.0 deprecates the bundled module (M30.1)
+  and its `http` refuses a URL without a valid scheme.
 - `http` needs the `net` capability, so sending needs the default `jennifer`
   binary; building and rendering messages also work on `jennifer-tiny`.
 - The tests use `httpd` and `task` for the loopback server.
