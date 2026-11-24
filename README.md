@@ -4,7 +4,7 @@
 [![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://jennifer-language.github.io/deck-discord/)
 [![release](https://img.shields.io/github/v/release/jennifer-language/deck-discord)](https://github.com/jennifer-language/deck-discord/releases/latest)
 
-Posts messages to a [Discord](https://discord.com) channel through a webhook
+Posts messages to a [Discord™](https://discord.com) channel through a webhook
 from a [Jennifer](https://jennifer-lang.dev/) program, from plain text to
 embeds with fields, footer and author. Replaces the `discord` module of
 Jennifer's standard library (shipped since 0.18.0, deprecated from 0.26.0,
@@ -54,3 +54,10 @@ LGPL-3.0-only, see [LICENSE](LICENSE). Copyright (C) 2026 mplx &lt;mplx@jennifer
 
 `tools/check-headers.sh` checks every source file's SPDX header against
 `deck.toml`.
+
+## Trademarks
+
+Discord™ is a trademark of Discord Inc. Other product and company names may
+be trademarks of their respective owners. They are used only to identify the
+products this deck works with. This deck is an independent project, not
+affiliated with, sponsored or endorsed by Discord Inc.

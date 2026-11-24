@@ -5,7 +5,7 @@
 
 ## Scope
 
-The deck posts messages to a Discord channel through a channel webhook: plain
+The deck posts messages to a Discord™ channel through a channel webhook: plain
 text with `send`, and rich messages (content, embeds with fields, footer and
 author, per-message username and avatar) built with `message` and the builder
 steps and posted with `sendMessage`. `render` returns the JSON payload without

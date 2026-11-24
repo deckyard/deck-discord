@@ -26,7 +26,7 @@ failures throw from `http`.
 | `embeds as list of Embed` | the embeds, in order |
 | `username as string` | display name override; `""` for none |
 | `avatar as string` | avatar image URL override; `""` for none |
-| `allowedMentions as string` | rendered `allowed_mentions` object; `""` for Discord's default |
+| `allowedMentions as string` | rendered `allowed_mentions` object; `""` for Discord™'s default |
 
 ### `Embed`
 

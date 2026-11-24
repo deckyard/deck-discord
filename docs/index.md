@@ -3,7 +3,7 @@
 
 # @jennifer/discord
 
-Posts messages to a [Discord](https://discord.com) channel through a channel
+Posts messages to a [Discord™](https://discord.com) channel through a channel
 [webhook](https://discord.com/developers/docs/resources/webhook), using
 Jennifer's `http` module. The full API is on the
 [cheatsheet](cheatsheet.md).
@@ -109,3 +109,10 @@ Three things differ from the module: the deck adds `noMentions` and the
 `Message.allowedMentions` field behind it (so a `Message{...}` literal needs
 the extra field), `embed` refuses an out-of-range colour, and a webhook URL
 that is not `https://`, which the module would have sent, throws.
+
+## Trademarks
+
+Discord™ is a trademark of Discord Inc. Other product and company names may
+be trademarks of their respective owners. They are used only to identify the
+products this deck works with. This deck is an independent project, not
+affiliated with, sponsored or endorsed by Discord Inc.
