@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: LGPL-3.0-only -->
 <!-- SPDX-FileCopyrightText: Copyright (C) 2026 mplx <mplx@jennifer-lang.dev> -->
 
-# @jennifer/discord
+# @deckyard/discord
 
 Posts messages to a [Discord™](https://discord.com) channel through a channel
 [webhook](https://discord.com/developers/docs/resources/webhook), using
@@ -13,7 +13,7 @@ Jennifer's `http` module. The full API is on the
 Snippets assume these imports:
 
 ```jennifer
-import "@jennifer/discord/" as discord;
+import "@deckyard/discord/" as discord;
 import "http.j" as http;
 ```
 
@@ -92,6 +92,15 @@ Needs `net`, so it runs on the default `jennifer` binary. The stock
 `jennifer-tiny` has no network driver and every send throws; building and
 rendering messages works on both.
 
+## Moving from `@jennifer/discord`
+
+Up to 0.1.0 this deck was `@jennifer/discord`. Change the `[decks]` entry to
+`"@deckyard/discord" = "^0.2.0"` and the imports:
+
+```jennifer
+import "@deckyard/discord/" as discord;
+```
+
 ## Moving from the standard library module
 
 Jennifer has shipped `discord` as a standard library module
@@ -102,7 +111,7 @@ types and functions; only the import changes:
 
 ```jennifer
 import "discord.j" as discord;             # before
-import "@jennifer/discord/" as discord;    # after: jvc add @jennifer/discord
+import "@deckyard/discord/" as discord;    # after: jvc add @deckyard/discord
 ```
 
 Three things differ from the module: the deck adds `noMentions` and the

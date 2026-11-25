@@ -1,6 +1,6 @@
 [package]
-name = "@jennifer/discord"
-version = "0.2.0-dev"
+name = "@deckyard/discord"
+version = "0.2.0"
 description = "Post messages to a Discord channel through a webhook"
 license = "LGPL-3.0-only"
 authors = ["mplx <mplx@jennifer-lang.dev>"]
@@ -10,9 +10,9 @@ capabilities = ["net"]
 keywords = ["discord", "notifications", "webhook", "chat"]
 
 [package.urls]
-deck = "https://raw.githubusercontent.com/jennifer-language/deck-discord/main/deck.toml"
-homepage = "https://github.com/jennifer-language/deck-discord"
-manual = "https://jennifer-language.github.io/deck-discord/"
+deck = "https://raw.githubusercontent.com/deckyard/deck-discord/main/deck.toml"
+homepage = "https://github.com/deckyard/deck-discord"
+manual = "https://deckyard.github.io/deck-discord/"
 
 [engines]
 jennifer = ">=0.27.0"

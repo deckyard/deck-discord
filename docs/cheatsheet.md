@@ -3,11 +3,11 @@
 
 # discord cheatsheet
 
-Every export of `@jennifer/discord`. Background is in
+Every export of `@deckyard/discord`. Background is in
 [the introduction](index.md).
 
 ```jennifer
-import "@jennifer/discord/" as discord;
+import "@deckyard/discord/" as discord;
 import "http.j" as http;
 ```
 

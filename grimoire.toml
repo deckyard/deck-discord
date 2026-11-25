@@ -1,7 +1,7 @@
-# Grimoire book configuration for the @jennifer/discord documentation.
+# Grimoire book configuration for the @deckyard/discord documentation.
 
 [book]
-title = "@jennifer/discord"
+title = "@deckyard/discord"
 description = "Post messages to a Discord channel through a webhook"
 language = "en"
 src = "docs"
@@ -18,10 +18,10 @@ navPosition = "left"
 tocPosition = "right"
 tocDepth = 3
 sectionNumbers = true
-titleUrl = "https://jennifer-language.github.io/deck-discord/"
-repoUrl = "https://github.com/jennifer-language/deck-discord"
+titleUrl = "https://deckyard.github.io/deck-discord/"
+repoUrl = "https://github.com/deckyard/deck-discord"
 repoLabel = "Source"
-editUrl = "https://github.com/jennifer-language/deck-discord/edit/main/docs/{path}"
+editUrl = "https://github.com/deckyard/deck-discord/edit/main/docs/{path}"
 
 [highlight]
 enabled = true

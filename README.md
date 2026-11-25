@@ -1,8 +1,8 @@
-# @jennifer/discord
+# @deckyard/discord
 
-[![test](https://github.com/jennifer-language/deck-discord/actions/workflows/test.yml/badge.svg)](https://github.com/jennifer-language/deck-discord/actions/workflows/test.yml)
-[![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://jennifer-language.github.io/deck-discord/)
-[![release](https://img.shields.io/github/v/release/jennifer-language/deck-discord)](https://github.com/jennifer-language/deck-discord/releases/latest)
+[![test](https://github.com/deckyard/deck-discord/actions/workflows/test.yml/badge.svg)](https://github.com/deckyard/deck-discord/actions/workflows/test.yml)
+[![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://deckyard.github.io/deck-discord/)
+[![release](https://img.shields.io/github/v/release/deckyard/deck-discord)](https://github.com/deckyard/deck-discord/releases/latest)
 
 Posts messages to a [Discord™](https://discord.com) channel through a webhook
 from a [Jennifer](https://jennifer-lang.dev/) program, from plain text to
@@ -10,21 +10,24 @@ embeds with fields, footer and author. Replaces the `discord` module of
 Jennifer's standard library (shipped since 0.18.0, deprecated from 0.26.0,
 removed in 0.28.0); the API is unchanged, only the import differs.
 
-**[Documentation](https://jennifer-language.github.io/deck-discord/)**
+Up to 0.1.0 this deck was `@jennifer/discord`. To switch, change the `[decks]`
+entry to `"@deckyard/discord" = "^0.2.0"` and the imports to `"@deckyard/discord/"`.
+
+**[Documentation](https://deckyard.github.io/deck-discord/)**
 
 ## Install
 
 ```sh
-jvc add @jennifer/discord
+jvc add @deckyard/discord
 ```
 
-This vendors the deck to `vendor/jennifer/discord/`. Without `jvc`, unpack the
-`src/` subtree of a release archive (`jennifer-discord-<version>.tar.gz`) there.
+This vendors the deck to `vendor/deckyard/discord/`. Without `jvc`, unpack the
+`src/` subtree of a release archive (`deckyard-discord-<version>.tar.gz`) there.
 
 ## Usage
 
 ```jennifer
-import "@jennifer/discord/" as discord;
+import "@deckyard/discord/" as discord;
 import "http.j" as http;
 
 def r as http.Response init discord.send(os.getEnv("DISCORD_WEBHOOK_URL"), "deploy finished");
